@@ -11,7 +11,7 @@ app.use(cors());
 app.use("/api/auth", router);
 
 connectDb().then(() => {
-  app.listen(process.env.PORT, () => {
+  app.listen(8081, () => {
     console.log("server is running");
   });
 });
