@@ -2,9 +2,9 @@
   "name": "myntra-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
