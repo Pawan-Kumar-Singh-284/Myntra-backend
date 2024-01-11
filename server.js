@@ -9,9 +9,9 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/api/auth", router);
-
+const Port=process.env.PORT || 3000
 connectDb().then(() => {
-  app.listen(process.env.PORT || 8081, () => {
-    console.log("server is running");
+  app.listen(Port, () => {
+    console.log("server is running on port",Port);
   });
 });
